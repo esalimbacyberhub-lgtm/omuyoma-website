@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — shared with Practice OS */
+  --color-navy: #1B2A4A;
+  --color-royal: #2C4875;
+  --color-gold: #C9A227;
+  --color-ivory: #F7F5F0;
+  --color-ink: #1A1A1A;
+  --color-slate: #5B6B85;
+
+  --font-display: "Newsreader", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Visible keyboard focus, kept consistent across interactive elements */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
