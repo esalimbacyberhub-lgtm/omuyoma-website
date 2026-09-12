@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero */}
       <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-[1.1fr_0.9fr] md:py-28">
         <div>
-          <h1 className="font-[var(--font-display)] text-4xl leading-[1.15] text-[var(--color-navy)] md:text-5xl">
+          <h1 className="font-[family-name:var(--font-display)] text-4xl leading-[1.15] text-[var(--color-navy)] md:text-5xl">
             Considered counsel, built on precision and trust.
           </h1>
           <p className="mt-6 max-w-md text-[17px] leading-relaxed text-[var(--color-slate)]">
@@ -46,11 +46,11 @@ export default function Home() {
       {/* Practice areas preview */}
       <section className="border-t border-black/5 bg-white/40">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          <h2 className="font-[var(--font-display)] text-2xl text-[var(--color-navy)]">Areas of practice</h2>
+          <h2 className="font-[family-name:var(--font-display)] text-2xl text-[var(--color-navy)]">Areas of practice</h2>
           <div className="mt-10 divide-y divide-black/10">
             {practiceAreas.map((area) => (
               <div key={area.slug} className="flex flex-col gap-2 py-6 md:flex-row md:items-baseline md:justify-between md:gap-8">
-                <h3 className="font-[var(--font-display)] text-lg text-[var(--color-navy)] md:w-64 md:shrink-0">
+                <h3 className="font-[family-name:var(--font-display)] text-lg text-[var(--color-navy)] md:w-64 md:shrink-0">
                   {area.name}
                 </h3>
                 <p className="text-[15px] leading-relaxed text-[var(--color-slate)]">{area.summary}</p>
@@ -69,7 +69,7 @@ export default function Home() {
       {/* Closing CTA */}
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="rounded-sm bg-[var(--color-navy)] px-8 py-14 text-center text-[var(--color-ivory)] md:px-16">
-          <h2 className="font-[var(--font-display)] text-2xl md:text-3xl">
+          <h2 className="font-[family-name:var(--font-display)] text-2xl md:text-3xl">
             Already a client? Access your matter online.
           </h2>
           <p className="mx-auto mt-4 max-w-md text-[15px] text-[var(--color-ivory)]/75">

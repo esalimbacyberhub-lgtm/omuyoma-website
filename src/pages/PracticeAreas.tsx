@@ -3,7 +3,7 @@ import { practiceAreas } from "../data/practiceAreas";
 export default function PracticeAreas() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-20">
-      <h1 className="font-[var(--font-display)] text-3xl text-[var(--color-navy)] md:text-4xl">
+      <h1 className="font-[family-name:var(--font-display)] text-3xl text-[var(--color-navy)] md:text-4xl">
         Practice areas
       </h1>
       <p className="mt-4 max-w-lg text-[15px] leading-relaxed text-[var(--color-slate)]">
@@ -13,7 +13,7 @@ export default function PracticeAreas() {
       <div className="mt-14 divide-y divide-black/10 border-t border-black/10">
         {practiceAreas.map((area) => (
           <article key={area.slug} className="grid gap-3 py-10 md:grid-cols-[0.7fr_1.3fr] md:gap-10">
-            <h2 className="font-[var(--font-display)] text-xl text-[var(--color-navy)]">{area.name}</h2>
+            <h2 className="font-[family-name:var(--font-display)] text-xl text-[var(--color-navy)]">{area.name}</h2>
             <p className="text-[15px] leading-relaxed text-[var(--color-slate)]">{area.detail}</p>
           </article>
         ))}

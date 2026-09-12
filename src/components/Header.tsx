@@ -20,7 +20,7 @@ export default function Header() {
     <header className="border-b border-black/5">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <NavLink to="/" className="flex items-baseline gap-2" onClick={() => setOpen(false)}>
-          <span className="font-[var(--font-display)] text-xl text-[var(--color-navy)]">Omuyoma & Co.</span>
+          <span className="font-[family-name:var(--font-display)] text-xl text-[var(--color-navy)]">Omuyoma & Co.</span>
           <span className="text-xs text-[var(--color-gold)]">Advocates</span>
         </NavLink>
 

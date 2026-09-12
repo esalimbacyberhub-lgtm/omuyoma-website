@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-[var(--color-navy)] text-[var(--color-ivory)]">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-3">
         <div>
-          <p className="font-[var(--font-display)] text-lg">Omuyoma & Co. Advocates</p>
+          <p className="font-[family-name:var(--font-display)] text-lg">Omuyoma & Co. Advocates</p>
           <p className="mt-3 max-w-xs text-sm text-[var(--color-ivory)]/70">
             Advocates of the High Court of Kenya, providing counsel across litigation, property,
             corporate, and family law.
