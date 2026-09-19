@@ -5,41 +5,61 @@ export interface PracticeArea {
   detail: string;
 }
 
-// Placeholder copy — replace with Omuyoma's confirmed list and descriptions.
 export const practiceAreas: PracticeArea[] = [
   {
-    slug: "litigation",
-    name: "Civil Litigation",
-    summary: "Representation before Kenyan courts and tribunals, from filing to judgment.",
+    slug: "civil-commercial-litigation",
+    name: "Civil & Commercial Litigation",
+    summary: "Constitutional references, judicial review, and litigation before every court level.",
     detail:
-      "We act for clients in commercial disputes, contractual claims, and civil matters at every court level, managing each case from pleadings through to enforcement of judgment.",
+      "Our litigation practice handles constitutional references and judicial review, civil and commercial disputes at the Court of Appeal, the High Court (Nairobi, Garissa, Eldoret, and Kisumu), Magistrates' Courts, and the Small Claims Court, alongside general property litigation, enforcement of arbitration awards, and insurance litigation.",
   },
   {
-    slug: "conveyancing",
-    name: "Conveyancing & Property",
-    summary: "Land transfers, title verification, and property transaction support.",
+    slug: "property-conveyancing",
+    name: "Property Law & Conveyancing",
+    summary: "Real property transactions, transfers, leases, and securities for corporates and individuals.",
     detail:
-      "Our conveyancing practice handles due diligence, transfer documentation, and registration for residential, commercial, and agricultural land transactions.",
+      "Conveyancing is one of the firm's core areas of specialization. We handle all kinds of real property transactions for corporate and individual clients, including the preparation of transfers, licences, leases, sales, purchases, debentures, charges, and mortgages.",
   },
   {
-    slug: "corporate",
-    name: "Corporate & Commercial",
-    summary: "Company formation, contracts, and ongoing legal counsel for businesses.",
+    slug: "debt-recovery-insolvency",
+    name: "Debt Recovery, Receiverships & Liquidation",
+    summary: "Winding up, bankruptcy, liquidation, and debt collection, including defending vexatious claims.",
     detail:
-      "We advise businesses on incorporation, governance, commercial agreements, and regulatory compliance, acting as outside counsel for firms that need dependable legal support.",
+      "The firm routinely handles winding up, bankruptcy, liquidation, debt collection, and receiverships, including preventive court action and defending clients against vexatious winding-up proceedings.",
   },
   {
-    slug: "family-law",
-    name: "Family Law",
-    summary: "Succession, matrimonial matters, and guardianship proceedings.",
+    slug: "employment-labour",
+    name: "Employment & Labour Law",
+    summary: "Representation before the Employment and Labour Relations Court.",
     detail:
-      "We guide families through succession and probate, matrimonial disputes, and guardianship matters with attention to both the legal process and the people involved.",
+      "We represent clients in the settlement of employment disputes through litigation at the Employment and Labour Relations Court.",
   },
   {
-    slug: "employment",
-    name: "Employment Law",
-    summary: "Advisory and representation on workplace disputes and policy.",
+    slug: "family-succession",
+    name: "Family Law & Succession",
+    summary: "Matrimonial matters, custody, and estate succession from wills to distribution.",
     detail:
-      "We represent both employers and employees in disputes before the Employment and Labour Relations Court, and advise on contracts, policy, and termination procedure.",
+      "We handle matrimonial cases including divorce, custody, and settlement of matrimonial property and adoption, alongside estate succession work — wills, petitions for grant of letters of administration, asset recovery, and distribution.",
+  },
+  {
+    slug: "intellectual-property",
+    name: "Intellectual Property Law",
+    summary: "Trademarks, patents, designs, and enforcement against infringement.",
+    detail:
+      "Our established intellectual property practice covers trademark and patent application procedures, protection of trademarks, service marks, patents, designs, and copyright, passing off, geographical indications, and enforcement against infringement, violations, and licensing disputes.",
+  },
+  {
+    slug: "adr",
+    name: "Alternative Dispute Resolution",
+    summary: "Arbitration and mediation, in both representative and adjudicative roles.",
+    detail:
+      "The firm actively participates in arbitration and mediation in both a representative and adjudicative capacity, encouraging clients toward out-of-court settlement where appropriate to promote speedy resolution and reduce legal costs.",
+  },
+  {
+    slug: "contract-law",
+    name: "Contract Law",
+    summary: "Commercial, building, employment, and corporate contracts and disputes.",
+    detail:
+      "We arrange and advise on commercial, building, management, employment, and corporate contracts, and litigate for redress of breach — including disputes in building contracts, consultancy services, and the sale, delivery, and carriage of goods.",
   },
 ];

@@ -10,19 +10,27 @@ export default function Contact() {
           <dl className="space-y-6 text-[15px]">
             <div>
               <dt className="text-[var(--color-gold)]">Office</dt>
-              <dd className="mt-1 text-[var(--color-slate)]">Nairobi, Kenya</dd>
+              <dd className="mt-1 text-[var(--color-slate)]">
+                Summit House, 4th Floor, Room 410<br />
+                Moi Avenue, Nairobi<br />
+                P.O. Box 24083-00100, Nairobi
+              </dd>
             </div>
             <div>
               <dt className="text-[var(--color-gold)]">Email</dt>
               <dd className="mt-1">
-                <a href="mailto:info@omuyomaadvocates.co.ke" className="text-[var(--color-navy)] underline decoration-[var(--color-gold)] underline-offset-4">
-                  info@omuyomaadvocates.co.ke
+                <a href="mailto:admin@omuyomaadvocates.com" className="text-[var(--color-navy)] underline decoration-[var(--color-gold)] underline-offset-4">
+                  admin@omuyomaadvocates.com
                 </a>
               </dd>
             </div>
             <div>
               <dt className="text-[var(--color-gold)]">Phone</dt>
-              <dd className="mt-1 text-[var(--color-slate)]">+254 7XX XXX XXX</dd>
+              <dd className="mt-1">
+                <a href="tel:+254741159158" className="text-[var(--color-navy)] underline decoration-[var(--color-gold)] underline-offset-4">
+                  +254 741 159 158
+                </a>
+              </dd>
             </div>
             <div>
               <dt className="text-[var(--color-gold)]">Existing client?</dt>
