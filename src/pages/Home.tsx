@@ -76,7 +76,11 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-10 max-w-xs">
-            <div className="aspect-[4/5] w-full rounded-sm bg-[var(--color-navy)]/10" aria-hidden="true" />
+            <img
+              src="/omuyoma.jpg"
+              alt="Omuyoma Amukhono, Managing Partner"
+              className="aspect-[4/5] w-full rounded-sm object-cover"
+            />
             <p className="mt-4 text-[15px] text-[var(--color-gold)]">Managing Partner</p>
             <h3 className="font-[family-name:var(--font-display)] text-lg text-[var(--color-navy)]">Omuyoma Amukhono</h3>
           </div>

@@ -55,8 +55,11 @@ export default function About() {
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="grid gap-14 md:grid-cols-[0.8fr_1.2fr]">
             <div>
-              <div className="aspect-[4/5] w-full max-w-xs rounded-sm bg-[var(--color-navy)]/10" aria-hidden="true" />
-              {/* Replace the block above with Omuyoma's professional photo once received */}
+              <img
+                src="/omuyoma.jpg"
+                alt="Omuyoma Amukhono, Managing Partner"
+                className="aspect-[4/5] w-full max-w-xs rounded-sm object-cover"
+              />
             </div>
 
             <div>

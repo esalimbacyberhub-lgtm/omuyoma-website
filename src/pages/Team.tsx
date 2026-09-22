@@ -10,8 +10,11 @@ export default function Team() {
       </p>
 
       <div className="mt-14 max-w-sm">
-        <div className="aspect-[4/5] w-full rounded-sm bg-[var(--color-navy)]/10" aria-hidden="true" />
-        {/* Replace the block above with Omuyoma's professional photo once received */}
+        <img
+          src="/omuyoma.jpg"
+          alt="Omuyoma Amukhono, Managing Partner"
+          className="aspect-[4/5] w-full rounded-sm object-cover"
+        />
         <p className="mt-5 text-[15px] text-[var(--color-gold)]">Managing Partner</p>
         <h2 className="font-[family-name:var(--font-display)] text-xl text-[var(--color-navy)]">
           Omuyoma Amukhono
