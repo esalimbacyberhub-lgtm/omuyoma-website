@@ -12,19 +12,19 @@ const links = [
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `text-[14px] whitespace-nowrap transition-colors ${
-    isActive ? "text-[var(--color-navy)] font-medium" : "text-[var(--color-slate)] hover:text-[var(--color-navy)]"
+    isActive ? "text-[var(--color-gold)]" : "text-[var(--color-muted)] hover:text-[var(--color-heading)]"
   }`;
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="border-b border-black/5">
+    <header className="border-b border-[var(--color-border)] bg-[var(--color-bg-alt)]">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <NavLink to="/" className="flex shrink-0 items-center gap-3" onClick={() => setOpen(false)}>
           <img src="/logo.png" alt="Omuyoma & Co. Advocates emblem" className="h-9 w-auto" />
           <span className="hidden flex-col leading-tight sm:flex">
-            <span className="font-[family-name:var(--font-display)] text-base text-[var(--color-navy)]">Omuyoma & Co.</span>
+            <span className="font-[family-name:var(--font-display)] text-base text-[var(--color-heading)]">Omuyoma & Co.</span>
             <span className="text-[10px] tracking-wide text-[var(--color-gold)]">Advocates</span>
           </span>
         </NavLink>
@@ -37,7 +37,7 @@ export default function Header() {
           ))}
           <a
             href="https://app.omuyomaadvocates.co.ke"
-            className="whitespace-nowrap rounded-sm bg-[var(--color-navy)] px-4 py-2 text-[14px] text-[var(--color-ivory)] transition-colors hover:bg-[var(--color-royal)]"
+            className="whitespace-nowrap rounded-sm bg-[var(--color-blue)] px-4 py-2 text-[14px] text-white transition-opacity hover:opacity-90"
           >
             Client Portal
           </a>
@@ -49,13 +49,13 @@ export default function Header() {
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
-          <span className="h-px w-6 bg-[var(--color-navy)]" />
-          <span className="h-px w-6 bg-[var(--color-navy)]" />
+          <span className="h-px w-6 bg-[var(--color-heading)]" />
+          <span className="h-px w-6 bg-[var(--color-heading)]" />
         </button>
       </div>
 
       {open && (
-        <nav className="flex flex-col gap-4 border-t border-black/5 px-6 py-5 lg:hidden">
+        <nav className="flex flex-col gap-4 border-t border-[var(--color-border)] px-6 py-5 lg:hidden">
           {links.map((link) => (
             <NavLink key={link.to} to={link.to} className={navLinkClass} end={link.to === "/"} onClick={() => setOpen(false)}>
               {link.label}
@@ -63,7 +63,7 @@ export default function Header() {
           ))}
           <a
             href="https://app.omuyomaadvocates.co.ke"
-            className="w-fit rounded-sm bg-[var(--color-navy)] px-4 py-2 text-[14px] text-[var(--color-ivory)]"
+            className="w-fit rounded-sm bg-[var(--color-blue)] px-4 py-2 text-[14px] text-white"
           >
             Client Portal
           </a>

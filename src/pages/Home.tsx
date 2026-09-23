@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { practiceAreas } from "../data/practiceAreas";
 
 const heroLines = [
-  "Considered counsel, built on precision and trust.",
   "Where professional excellence meets personal commitment.",
   "Integrity. Excellence. Commitment.",
 ];
@@ -33,31 +32,26 @@ export default function Home() {
             Omuyoma &amp; Co. Advocates
           </p>
           <h1
-            className={`mt-3 min-h-[2.3em] font-[family-name:var(--font-display)] text-4xl leading-[1.15] text-[var(--color-navy)] transition-opacity duration-300 md:text-5xl ${
+            className={`mt-3 min-h-[2.3em] font-[family-name:var(--font-display)] text-4xl leading-[1.15] text-[var(--color-heading)] transition-opacity duration-300 md:text-5xl ${
               visible ? "opacity-100" : "opacity-0"
             }`}
           >
             {heroLines[lineIndex]}
           </h1>
-          <p className="mt-6 max-w-md text-[17px] leading-relaxed text-[var(--color-slate)]">
-            Omuyoma & Co. Advocates represents individuals and businesses across Kenya in
-            litigation, property, corporate, and family matters — with the diligence a case
-            deserves and the clarity a client needs.
-          </p>
           <div className="mt-9 flex flex-wrap items-center gap-5">
             <Link
               to="/contact"
-              className="rounded-sm bg-[var(--color-navy)] px-6 py-3 text-[15px] text-[var(--color-ivory)] transition-colors hover:bg-[var(--color-royal)]"
+              className="rounded-sm bg-[var(--color-blue)] px-6 py-3 text-[15px] text-white transition-opacity hover:opacity-90"
             >
               Book a Consultation
             </Link>
-            <Link to="/team" className="text-[15px] text-[var(--color-navy)] underline decoration-[var(--color-gold)] underline-offset-4">
+            <Link to="/team" className="text-[15px] text-[var(--color-heading)] underline decoration-[var(--color-gold)] underline-offset-4">
               Meet the team
             </Link>
           </div>
         </div>
 
-        <div className="relative hidden items-center justify-center rounded-sm bg-[var(--color-navy)] p-10 md:flex">
+        <div className="relative hidden items-center justify-center rounded-sm bg-[var(--color-bg-alt)] p-10 md:flex">
           <img
             src="/logo-watermark.png"
             alt="Omuyoma & Co. Advocates emblem"
@@ -67,11 +61,11 @@ export default function Home() {
       </section>
 
       {/* Team teaser */}
-      <section className="border-t border-black/5 bg-white/40">
+      <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-alt)]">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="flex items-baseline justify-between">
-            <h2 className="font-[family-name:var(--font-display)] text-2xl text-[var(--color-navy)]">Meet the Team</h2>
-            <Link to="/team" className="text-[15px] text-[var(--color-navy)] underline decoration-[var(--color-gold)] underline-offset-4">
+            <h2 className="font-[family-name:var(--font-display)] text-2xl text-[var(--color-heading)]">Meet the Team</h2>
+            <Link to="/team" className="text-[15px] text-[var(--color-heading)] underline decoration-[var(--color-gold)] underline-offset-4">
               View all team members
             </Link>
           </div>
@@ -82,7 +76,7 @@ export default function Home() {
               className="aspect-[4/5] w-full rounded-sm object-cover"
             />
             <p className="mt-4 text-[15px] text-[var(--color-gold)]">Managing Partner</p>
-            <h3 className="font-[family-name:var(--font-display)] text-lg text-[var(--color-navy)]">Omuyoma Amukhono</h3>
+            <h3 className="font-[family-name:var(--font-display)] text-lg text-[var(--color-heading)]">Omuyoma Amukhono</h3>
           </div>
         </div>
       </section>
@@ -90,18 +84,18 @@ export default function Home() {
       {/* Practice areas grid */}
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="flex items-baseline justify-between">
-          <h2 className="font-[family-name:var(--font-display)] text-2xl text-[var(--color-navy)]">Our Practice Areas</h2>
-          <Link to="/practice-areas" className="text-[15px] text-[var(--color-navy)] underline decoration-[var(--color-gold)] underline-offset-4">
+          <h2 className="font-[family-name:var(--font-display)] text-2xl text-[var(--color-heading)]">Our Practice Areas</h2>
+          <Link to="/practice-areas" className="text-[15px] text-[var(--color-heading)] underline decoration-[var(--color-gold)] underline-offset-4">
             View all practice areas
           </Link>
         </div>
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {practiceAreas.map((area) => (
             <div key={area.slug} className="border-t border-[var(--color-gold)] pt-4">
-              <h3 className="font-[family-name:var(--font-display)] text-lg text-[var(--color-navy)]">
+              <h3 className="font-[family-name:var(--font-display)] text-lg text-[var(--color-heading)]">
                 {area.name}
               </h3>
-              <p className="mt-2 text-[15px] leading-relaxed text-[var(--color-slate)]">{area.summary}</p>
+              <p className="mt-2 text-[15px] leading-relaxed text-[var(--color-muted)]">{area.summary}</p>
             </div>
           ))}
         </div>
@@ -109,18 +103,18 @@ export default function Home() {
 
       {/* Closing CTA */}
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="rounded-sm bg-[var(--color-navy)] px-8 py-14 text-center text-[var(--color-ivory)] md:px-16">
+        <div className="rounded-sm bg-[var(--color-bg-alt)] px-8 py-14 text-center text-[var(--color-heading)] md:px-16">
           <h2 className="font-[family-name:var(--font-display)] text-2xl md:text-3xl">
             We're ready to serve — book a consultation, or access your matter online.
           </h2>
-          <p className="mx-auto mt-4 max-w-md text-[15px] text-[var(--color-ivory)]/75">
+          <p className="mx-auto mt-4 max-w-md text-[15px] text-[var(--color-muted)]">
             Existing clients can access their case documents, deadlines, and billing statements
             through the client portal.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-5">
             <Link
               to="/contact"
-              className="inline-block rounded-sm bg-[var(--color-gold)] px-6 py-3 text-[15px] text-[var(--color-navy)] transition-opacity hover:opacity-90"
+              className="inline-block rounded-sm bg-[var(--color-gold)] px-6 py-3 text-[15px] text-[var(--color-bg)] transition-opacity hover:opacity-90"
             >
               Book a Consultation
             </Link>
