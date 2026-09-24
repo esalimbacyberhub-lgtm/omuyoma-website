@@ -9,10 +9,6 @@ export default function Footer() {
           <p className="mt-2 text-xs uppercase tracking-wide text-[var(--color-gold)]">
             Integrity. Excellence. Commitment.
           </p>
-          <p className="mt-4 max-w-xs text-sm text-[var(--color-muted)]">
-            Where professional excellence meets personal commitment — personalized,
-            integrity-driven legal services delivered with timeliness and care.
-          </p>
         </div>
 
         <div>
