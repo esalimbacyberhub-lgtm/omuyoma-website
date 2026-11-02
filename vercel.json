@@ -2,12 +2,14 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.omuyomaadvocates.co.ke" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.omuyomaadvocates.co.ke"
+        }
+      ],
       "destination": "https://omuyomaadvocates.co.ke/:path*",
       "statusCode": 301
     }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

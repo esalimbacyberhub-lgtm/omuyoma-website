@@ -23,7 +23,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "corporate-commercial",
     name: "Corporate & Commercial Law",
-    summary: "Company formation, business law, and commercial contracts for organizations and individuals.",
+    summary: "The firm advises on corporate and commercial law, business law and commercial contracts.",
     detail: "The firm advises on company formation, corporate and commercial law, business law, and commercial contracts.",
   },
   {
