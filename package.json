@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && vite build --ssr src/ssr.tsx --outDir .ssr-temp && node scripts/prerender.mjs",
+    "typecheck:api": "tsc -p api/tsconfig.json",
+    "build": "tsc -b && npm run typecheck:api && vite build && vite build --ssr src/ssr.tsx --outDir .ssr-temp && node scripts/prerender.mjs",
     "lint": "oxlint",
     "preview": "vite preview"
   },
@@ -18,6 +19,7 @@
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
+    "@vercel/node": "^29.0.1",
     "@vitejs/plugin-react": "^6.1.1",
     "autoprefixer": "^10.5.6",
     "oxlint": "^1.81.0",
