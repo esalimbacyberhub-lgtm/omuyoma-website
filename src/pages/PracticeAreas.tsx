@@ -1,4 +1,11 @@
 import { practiceAreas } from "../data/practiceAreas";
+import { Link } from "react-router-dom";
+
+const detailRoutes: Record<string, string> = {
+  "civil-commercial-litigation": "civil-litigation", "property-conveyancing": "property",
+  "corporate-commercial": "corporate",
+  "employment-labour": "employment", "family-succession": "family", "intellectual-property": "intellectual-property",
+};
 
 export default function PracticeAreas() {
   return (
@@ -13,7 +20,7 @@ export default function PracticeAreas() {
       <div className="mt-14 divide-y divide-[var(--color-border)] border-t border-[var(--color-border)]">
         {practiceAreas.map((area) => (
           <article key={area.slug} className="grid gap-3 py-10 md:grid-cols-[0.7fr_1.3fr] md:gap-10">
-            <h2 className="font-[family-name:var(--font-display)] text-xl text-[var(--color-heading)]">{area.name}</h2>
+            <div><h2 className="font-[family-name:var(--font-display)] text-xl text-[var(--color-heading)]">{area.name}</h2>{detailRoutes[area.slug] && <Link to={`/practice-areas/${detailRoutes[area.slug]}`} className="mt-3 inline-block text-sm underline decoration-[var(--color-gold)] underline-offset-4">Explore this practice</Link>}</div>
             <p className="text-[15px] leading-relaxed text-[var(--color-muted)]">{area.detail}</p>
           </article>
         ))}

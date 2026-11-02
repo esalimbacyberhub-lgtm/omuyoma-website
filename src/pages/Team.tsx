@@ -13,6 +13,7 @@ export default function Team() {
         <img
           src="/omuyoma.jpg"
           alt="Omuyoma Amukhono, Managing Partner"
+          loading="lazy"
           className="aspect-[4/5] w-full rounded-sm object-cover"
         />
         <p className="mt-5 text-[15px] text-[var(--color-gold)]">Managing Partner</p>

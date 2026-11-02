@@ -6,6 +6,10 @@ const heroLines = [
   "Where professional excellence meets personal commitment.",
   "Integrity. Excellence. Commitment.",
 ];
+const practiceRoutes: Record<string, string> = {
+  "civil-commercial-litigation": "civil-litigation", "property-conveyancing": "property", "corporate-commercial": "corporate",
+  "employment-labour": "employment", "family-succession": "family", "intellectual-property": "intellectual-property",
+};
 
 export default function Home() {
   const [lineIndex, setLineIndex] = useState(0);
@@ -73,6 +77,7 @@ export default function Home() {
             <img
               src="/omuyoma.jpg"
               alt="Omuyoma Amukhono, Managing Partner"
+              loading="lazy"
               className="aspect-[4/5] w-full rounded-sm object-cover"
             />
             <p className="mt-4 text-[15px] text-[var(--color-gold)]">Managing Partner</p>
@@ -93,7 +98,7 @@ export default function Home() {
           {practiceAreas.map((area) => (
             <div key={area.slug} className="border-t border-[var(--color-gold)] pt-4">
               <h3 className="font-[family-name:var(--font-display)] text-lg text-[var(--color-heading)]">
-                {area.name}
+                {practiceRoutes[area.slug] ? <Link to={`/practice-areas/${practiceRoutes[area.slug]}`}>{area.name}</Link> : area.name}
               </h3>
               <p className="mt-2 text-[15px] leading-relaxed text-[var(--color-muted)]">{area.summary}</p>
             </div>
