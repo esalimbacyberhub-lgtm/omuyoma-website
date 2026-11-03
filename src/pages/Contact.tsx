@@ -153,6 +153,13 @@ export default function Contact() {
               </dd>
             </div>
             <div>
+              <dt className="text-[var(--color-gold)]">Office hours</dt>
+              <dd className="mt-1 text-[var(--color-muted)]">
+                Monday to Friday, 9:00 am to 4:00 pm<br />
+                Closed Saturdays, Sundays and public holidays
+              </dd>
+            </div>
+            <div>
               <dt className="text-[var(--color-gold)]">Email</dt>
               <dd className="mt-1">
                 <a href="mailto:admin@omuyomaadvocates.com" className="text-[var(--color-heading)] underline decoration-[var(--color-gold)] underline-offset-4">
