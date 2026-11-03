@@ -58,6 +58,7 @@ export default function About() {
               <img
                 src="/omuyoma.jpg"
                 alt="Omuyoma Amukhono, Managing Partner"
+                loading="lazy"
                 className="aspect-[4/5] w-full max-w-xs rounded-sm object-cover"
               />
             </div>

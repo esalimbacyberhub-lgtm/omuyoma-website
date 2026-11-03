@@ -21,6 +21,12 @@ export const practiceAreas: PracticeArea[] = [
       "Conveyancing is one of the firm's core areas of specialization. We handle all kinds of real property transactions for corporate and individual clients, including the preparation of transfers, licences, leases, sales, purchases, debentures, charges, and mortgages.",
   },
   {
+    slug: "corporate-commercial",
+    name: "Corporate & Commercial Law",
+    summary: "The firm advises on corporate and commercial law, business law and commercial contracts.",
+    detail: "The firm advises on company formation, corporate and commercial law, business law, and commercial contracts.",
+  },
+  {
     slug: "debt-recovery-insolvency",
     name: "Debt Recovery, Receiverships & Liquidation",
     summary: "Winding up, bankruptcy, liquidation, and debt collection, including defending vexatious claims.",
