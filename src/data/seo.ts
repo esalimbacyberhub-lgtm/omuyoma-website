@@ -21,5 +21,6 @@ export const legalService = {
   url: siteUrl, logo: `${siteUrl}/logo.png`, image: `${siteUrl}/logo.png`,
   address: { "@type": "PostalAddress", streetAddress: "Summit House, 4th Floor, Room 410, Moi Avenue", addressLocality: "Nairobi", postalCode: "00100", postOfficeBoxNumber: "24083", addressCountry: "KE" },
   telephone: "+254741159158", email: "admin@omuyomaadvocates.com", areaServed: [{ "@type": "City", name: "Nairobi" }, { "@type": "Country", name: "Kenya" }],
-  // TODO: add openingHours and sameAs (verified social URLs) once confirmed. Omitted so no placeholder reaches the built HTML.
+  openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "09:00", closes: "16:00" }],
+  // TODO: add sameAs (verified social URLs) once confirmed. Omitted so no placeholder reaches the built HTML.
 };
